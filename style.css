@@ -85,9 +85,9 @@ html {
   .settings {
     margin: auto;
     width: 80%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    /* align-items: center; */
   }
   
   #reset {
@@ -106,7 +106,6 @@ html {
   
   #work p, #break p {
     color: white;
-    /* background: #ff3814; */
     padding: 5px;
   }
   
@@ -118,5 +117,9 @@ html {
   @media only screen and (max-width: 400px) {
     .timerDisplay {
     font-size: 2.5em;
+    }
+
+    h1{
+        font-size: 2.5rem;
     }
   }

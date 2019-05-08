@@ -32,7 +32,7 @@ resetBtn.addEventListener('click', () => {
     isBreak = true
 })
 
-// Timer handles countdown
+// Timer handles countdown magic
 const timer = () => {
     seconds--
     if (seconds < 0) {
