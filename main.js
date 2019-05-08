@@ -82,5 +82,10 @@ const updateHTML = () => {
     countdownDisplay()
     buttonDisplay()
     isBreak ? status.textContent = "Keep Working" : status.textContent = "Take a Break!"
-
+    workMin.textContent = workTime
+    breakMin.textContent = breakTime
 }
+
+window.setInterval(updateHTML, 100)
+
+document.onclick = updateHTML

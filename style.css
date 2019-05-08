@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+html {
+    background-color: #00264d ;
+    text-align: center;
+    min-width: 350px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    font-weight: lighter;
+    color: white;
+    padding: 0px;
+    margin: 0px 10px;
+  }
+  
+  .container {
+    padding: 0px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #pomodoro {
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 10px;
+  }
+  
+  #status {
+    width: 70%;
+    color: #efc4c4;
+    font-size: 2em;
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .timerDisplay {
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn {
+    margin: 10px;
+    padding: 8px 10px;
+    color: white;
+    font-size: 1em;
+    cursor:pointer;
+    border: 2px solid white;
+  }
+  
+  #start-btn {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    background: green;
+  }
+  
+  .btn-settings {
+    background-color:  #a8a8a8;
+    margin: 10px;
+    border: 1px solid #a8a8a8;
+    border-radius: 10px;
+    padding: 2px 5px;
+    min-width: 40px;
+    color: white;
+    font-size: 2em;
+    cursor:pointer;
+  }
+  
+  .settings {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+  }
+  
+  #reset {
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    background: #ff6347;
+    transform: translate(0%, 50%);
+    
+  }
+  
+  #work, #break {
+    color: white;
+    font-weight: bold;
+  } 
+  
+  #work p, #break p {
+    color: white;
+    /* background: #ff3814; */
+    padding: 5px;
+  }
+  
+  .footer {
+    padding: 20px 0;
+    color: #4e4e5b;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .timerDisplay {
+    font-size: 2.5em;
+    }
+  }
