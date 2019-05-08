@@ -26,7 +26,7 @@ startBtn.addEventListener('click', () => {
 
 resetBtn.addEventListener('click', () => {
     clearInterval(countdown)
-    seconds = worktime * 60
+    seconds = workTime * 60
     countdown = 0
     isPaused = true
     isBreak = true
@@ -35,7 +35,7 @@ resetBtn.addEventListener('click', () => {
 // Timer handles countdown
 const timer = () => {
     seconds--
-    if(seconds < 0){
+    if (seconds < 0) {
         clearInterval(countdown)
         alarm.currentTime = 0
         alarm.play()
@@ -44,3 +44,43 @@ const timer = () => {
     }
 }
 
+// Update WORK and BREAK times
+let increment = 5
+
+let incrementFunctions =
+{
+    "#work-plus": () => { workTime = Math.min(workTime + increment, 60) },
+    "#work-minus": () => { workTime = Math.max(workTime - increment, 5) },
+    "#break-plus": () => { breakTime = Math.min(breakTime + increment, 60) },
+    "#break-minus": () => { breakTime = Math.max(breakTime - increment, 5) }
+}
+
+for (var key in incrementFunctions) {
+    if (incrementFunctions.hasOwnProperty(key)) {
+        document.querySelector(key).onclick = incrementFunctions[key]
+    }
+}
+
+// Update HTML content
+const countdownDisplay = () => {
+    let minutes = Math.floor(seconds / 60)
+    let remainderSeconds = seconds % 60
+    timerDisplay.textContent = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`
+}
+
+const buttonDisplay = () => {
+    if (isPaused && countdown == 0) {
+        startBtn.textContent = "START"
+    } else if (isPaused && countdown !== 0) {
+        startBtn.textContent = "Continue"
+    } else {
+        startBtn.textContent = "Pause"
+    }
+}
+
+const updateHTML = () => {
+    countdownDisplay()
+    buttonDisplay()
+    isBreak ? status.textContent = "Keep Working" : status.textContent = "Take a Break!"
+
+}
