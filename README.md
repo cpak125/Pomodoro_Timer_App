@@ -16,6 +16,6 @@ https://loving-morse-c5ae32.netlify.com/
 3. Javascript
 
 ## Things I Learned
-1. setInterva() and clearInterval() practice
+1. setInterval() and clearInterval() practice
 2. Math.min(), Math.max(), Math.floor() practice
 3. associative arrays, which is essentially a set of key value pairs
