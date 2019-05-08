@@ -5,10 +5,10 @@ Developed a simple Pomodoro timer app. The Pomodoro Technique is a time-manageme
 The timer will toggle between starting and pausing when you click the "start" button. Once the timer reaches zero, an alarm will go off. A work session is always followed by a break session. The work and break durations can be modified.
 The "reset" button will (you guessed it) reset the timer.
 
-![alt text](https://github.com/cpak125/Meme_Maker_App/blob/master/public/images/screenshot.png)
+![alt text](https://github.com/cpak125/Pomodoro_Timer_App/blob/master/screenshot.png)
 
 ## Deployed App
-https://cpak-meme-maker-app.herokuapp.com/
+https://loving-morse-c5ae32.netlify.com/
 
 ## Technologies Used
 1. HTML5
@@ -17,5 +17,5 @@ https://cpak-meme-maker-app.herokuapp.com/
 
 ## Things I Learned
 1. setInterva() and clearInterval() practice
-2. Math.min(), Math.max(), Math.floor() practive
+2. Math.min(), Math.max(), Math.floor() practice
 3. associative arrays, which is essentially a set of key value pairs
