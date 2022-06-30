@@ -5,10 +5,9 @@ Developed a simple Pomodoro timer app. The Pomodoro Technique is a time-manageme
 The timer will toggle between starting and pausing when you click the "start" button. Once the timer reaches zero, an alarm will go off. A work session is always followed by a break session. The work and break durations can be modified.
 The "reset" button will reset the timer.
 
-![alt text](https://github.com/cpak125/Pomodoro_Timer_App/blob/master/screenshot.png)
+[Deployed App](https://cpakpomodorotimer.netlify.app/)
 
-## Deployed App
-https://loving-morse-c5ae32.netlify.com/
+![alt text](https://github.com/cpak125/Pomodoro_Timer_App/blob/master/screenshot.png)
 
 ## Technologies Used
 1. HTML5
